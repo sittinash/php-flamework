@@ -1,0 +1,870 @@
+INFO | 08:35:17 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/index from 127.0.0.1.
+INFO | 08:35:17 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'index',
+).
+INFO | 08:35:17 | @Bootstrap.Bootstrap | > Valid element count (3/5).
+INFO | 08:35:17 | @Bootstrap._loadController | > Load Controller index-controller.php.
+INFO | 08:35:17 | @ControllerWithPermission.Controller | > [Array] $_SESSION: array (
+).
+INFO | 08:35:17 | @Bootstrap._loadController | > Render View index.php with Render Option: 0.
+INFO | 08:35:17 | @ControllerWithPermission._checkPermission | > [Integer] Session::get('user_no'): .
+INFO | 08:35:17 | @ControllerWithPermission.renderView | > [Integer] $permission: 0.
+ERROR | 08:35:17 | @ControllerWithPermission.renderView | > Permission not granted.
+INFO | 08:35:17 | @Controller.headToPage | > Head to: http://127.0.0.1/framework-php/login.
+INFO | 08:35:17 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/login from 127.0.0.1.
+INFO | 08:35:17 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'login',
+).
+INFO | 08:35:17 | @Bootstrap.Bootstrap | > Valid element count (3/5).
+INFO | 08:35:17 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 08:35:17 | @Controller.Controller | > [Array] $_SESSION: array (
+).
+INFO | 08:35:17 | @Bootstrap._loadController | > Render View login.php with Render Option: 3.
+INFO | 08:35:43 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/ from 127.0.0.1.
+INFO | 08:35:43 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+).
+INFO | 08:35:43 | @Bootstrap.Bootstrap | > Valid element count (2/5).
+INFO | 08:35:43 | @Bootstrap.Bootstrap | > [String] $url[2] is empty.
+INFO | 08:35:43 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 08:35:43 | @Controller.Controller | > [Array] $_SESSION: array (
+).
+INFO | 08:35:43 | @Bootstrap._loadController | > Render View login.php with Render Option: 3.
+INFO | 08:35:51 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/login/doLogin from 127.0.0.1.
+INFO | 08:35:51 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'login',
+  3 => 'doLogin',
+).
+INFO | 08:35:51 | @Bootstrap.Bootstrap | > Valid element count (4/5).
+INFO | 08:35:51 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 08:35:51 | @Controller.Controller | > [Array] $_SESSION: array (
+).
+INFO | 08:35:51 | @Bootstrap._loadController | > Call Function login.doLogin().
+INFO | 08:35:51 | @Login.doLogin | > Function Login.doLogin() is called.
+INFO | 08:35:51 | @DoLoginScript.run | > [String] $username: admin.
+INFO | 08:35:51 | @DoLoginScript.run | > [String] $password: 32d97978b127094283f00b884b3ccd66.
+INFO | 08:35:51 | @Database.Database | > Connect to Database: framework.
+INFO | 08:35:51 | @DoLoginScript.run | > [UserModel] $user_no: 1, $username: admin, $password: , $isAdmin: 1
+INFO | 08:35:51 | @DoLoginScript.run | > Login success.
+INFO | 08:35:51 | @ | > @[Array] $_SESSION: array (
+  'user_no' => 1,
+  'username' => 'admin',
+  'isAdmin' => '1',
+)
+INFO | 08:35:51 | @Controller.headToPage | > Head to: http://127.0.0.1/framework-php/index.
+INFO | 08:35:51 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/index from 127.0.0.1.
+INFO | 08:35:51 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'index',
+).
+INFO | 08:35:51 | @Bootstrap.Bootstrap | > Valid element count (3/5).
+INFO | 08:35:51 | @Bootstrap._loadController | > Load Controller index-controller.php.
+INFO | 08:35:51 | @ControllerWithPermission.Controller | > [Array] $_SESSION: array (
+  'user_no' => 1,
+  'username' => 'admin',
+  'isAdmin' => '1',
+).
+INFO | 08:35:51 | @Bootstrap._loadController | > Render View index.php with Render Option: 0.
+INFO | 08:35:51 | @ControllerWithPermission._checkPermission | > [Integer] Session::get('user_no'): 1.
+INFO | 08:35:51 | @ControllerWithPermission.renderView | > [Integer] $permission: 1.
+INFO | 08:35:51 | @ControllerWithPermission.renderView | > Permission granted.
+INFO | 09:28:08 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/index/doLogout from 127.0.0.1.
+INFO | 09:28:08 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'index',
+  3 => 'doLogout',
+).
+INFO | 09:28:08 | @Bootstrap.Bootstrap | > Valid element count (4/5).
+INFO | 09:28:08 | @Bootstrap._loadController | > Load Controller index-controller.php.
+INFO | 09:28:08 | @ControllerWithPermission.Controller | > [Array] $_SESSION: array (
+  'user_no' => 1,
+  'username' => 'admin',
+  'isAdmin' => '1',
+  'viewDepositRequestListScript.depReqList' => 
+  array (
+  ),
+  'viewClientMessageListScript.clientMsgList' => 
+  array (
+    0 => 
+    array (
+      'client_msg_no' => '2',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-22 22:40:35',
+      'name' => 'ทดสอบนะ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+    1 => 
+    array (
+      'client_msg_no' => '1',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-20 18:25:34',
+      'name' => 'ทดสอบ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+  ),
+  'viewRegisterRequestListScript.regReqList' => 
+  array (
+    0 => 
+    array (
+      'req_register_no' => '5',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 17:20:12',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กรุงเทพ',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'ป้ายโฆษณา',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    1 => 
+    array (
+      'req_register_no' => '4',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 16:35:42',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'เพื่อนแนะนำ',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    2 => 
+    array (
+      'req_register_no' => '3',
+      'is_valid' => '1',
+      'is_commit' => '1',
+      'timestamp' => '2016-07-15 16:35:14',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ จากมายแอดมิน',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'จาก google',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+  ),
+).
+INFO | 09:28:08 | @Bootstrap._loadController | > Call Function index.doLogout().
+INFO | 09:28:08 | @Controller.doLogout | > Function doLogout() is called.
+INFO | 09:28:08 | @Controller.headToPage | > Head to: http://127.0.0.1/framework-php/login.
+INFO | 09:28:08 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/login from 127.0.0.1.
+INFO | 09:28:08 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'login',
+).
+INFO | 09:28:08 | @Bootstrap.Bootstrap | > Valid element count (3/5).
+INFO | 09:28:08 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 09:28:08 | @Controller.Controller | > [Array] $_SESSION: array (
+  'user_no' => -1,
+  'username' => 'guest',
+  'isAdmin' => 0,
+  'viewDepositRequestListScript.depReqList' => 
+  array (
+  ),
+  'viewClientMessageListScript.clientMsgList' => 
+  array (
+    0 => 
+    array (
+      'client_msg_no' => '2',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-22 22:40:35',
+      'name' => 'ทดสอบนะ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+    1 => 
+    array (
+      'client_msg_no' => '1',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-20 18:25:34',
+      'name' => 'ทดสอบ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+  ),
+  'viewRegisterRequestListScript.regReqList' => 
+  array (
+    0 => 
+    array (
+      'req_register_no' => '5',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 17:20:12',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กรุงเทพ',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'ป้ายโฆษณา',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    1 => 
+    array (
+      'req_register_no' => '4',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 16:35:42',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'เพื่อนแนะนำ',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    2 => 
+    array (
+      'req_register_no' => '3',
+      'is_valid' => '1',
+      'is_commit' => '1',
+      'timestamp' => '2016-07-15 16:35:14',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ จากมายแอดมิน',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'จาก google',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+  ),
+).
+INFO | 09:28:08 | @Bootstrap._loadController | > Render View login.php with Render Option: 3.
+INFO | 09:42:30 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/login/doLogin from 127.0.0.1.
+INFO | 09:42:30 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'login',
+  3 => 'doLogin',
+).
+INFO | 09:42:30 | @Bootstrap.Bootstrap | > Valid element count (4/5).
+INFO | 09:42:30 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 09:42:30 | @Controller.Controller | > [Array] $_SESSION: array (
+  'user_no' => -1,
+  'username' => 'guest',
+  'isAdmin' => 0,
+  'viewClientMessageListScript.clientMsgList' => 
+  array (
+    0 => 
+    array (
+      'client_msg_no' => '2',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-22 22:40:35',
+      'name' => 'ทดสอบนะ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+    1 => 
+    array (
+      'client_msg_no' => '1',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-20 18:25:34',
+      'name' => 'ทดสอบ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+  ),
+  'viewDepositRequestListScript.depReqList' => 
+  array (
+  ),
+  'viewRegisterRequestListScript.regReqList' => 
+  array (
+    0 => 
+    array (
+      'req_register_no' => '5',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 17:20:12',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กรุงเทพ',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'ป้ายโฆษณา',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    1 => 
+    array (
+      'req_register_no' => '4',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 16:35:42',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'เพื่อนแนะนำ',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    2 => 
+    array (
+      'req_register_no' => '3',
+      'is_valid' => '1',
+      'is_commit' => '1',
+      'timestamp' => '2016-07-15 16:35:14',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ จากมายแอดมิน',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'จาก google',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+  ),
+).
+INFO | 09:42:30 | @Bootstrap._loadController | > Call Function login.doLogin().
+INFO | 09:42:30 | @Login.doLogin | > Function Login.doLogin() is called.
+INFO | 09:42:30 | @DoLoginScript.run | > [String] $username: admin.
+INFO | 09:42:30 | @DoLoginScript.run | > [String] $password: 32d97978b127094283f00b884b3ccd66.
+INFO | 09:42:30 | @Database.Database | > Connect to Database: framework.
+INFO | 09:42:30 | @DoLoginScript.run | > [UserModel] $user_no: 1, $username: admin, $password: , $isAdmin: 1
+INFO | 09:42:30 | @DoLoginScript.run | > Login success.
+INFO | 09:42:30 | @ | > @[Array] $_SESSION: array (
+  'user_no' => 1,
+  'username' => 'admin',
+  'isAdmin' => '1',
+  'viewClientMessageListScript.clientMsgList' => 
+  array (
+    0 => 
+    array (
+      'client_msg_no' => '2',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-22 22:40:35',
+      'name' => 'ทดสอบนะ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+    1 => 
+    array (
+      'client_msg_no' => '1',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-20 18:25:34',
+      'name' => 'ทดสอบ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+  ),
+  'viewDepositRequestListScript.depReqList' => 
+  array (
+  ),
+  'viewRegisterRequestListScript.regReqList' => 
+  array (
+    0 => 
+    array (
+      'req_register_no' => '5',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 17:20:12',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กรุงเทพ',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'ป้ายโฆษณา',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    1 => 
+    array (
+      'req_register_no' => '4',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 16:35:42',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'เพื่อนแนะนำ',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    2 => 
+    array (
+      'req_register_no' => '3',
+      'is_valid' => '1',
+      'is_commit' => '1',
+      'timestamp' => '2016-07-15 16:35:14',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ จากมายแอดมิน',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'จาก google',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+  ),
+)
+INFO | 09:42:30 | @Controller.headToPage | > Head to: http://127.0.0.1/framework-php/index.
+INFO | 09:42:30 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/index from 127.0.0.1.
+INFO | 09:42:30 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'index',
+).
+INFO | 09:42:30 | @Bootstrap.Bootstrap | > Valid element count (3/5).
+INFO | 09:42:30 | @Bootstrap._loadController | > Load Controller index-controller.php.
+INFO | 09:42:30 | @ControllerWithPermission.Controller | > [Array] $_SESSION: array (
+  'user_no' => 1,
+  'username' => 'admin',
+  'isAdmin' => '1',
+  'viewClientMessageListScript.clientMsgList' => 
+  array (
+    0 => 
+    array (
+      'client_msg_no' => '2',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-22 22:40:35',
+      'name' => 'ทดสอบนะ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+    1 => 
+    array (
+      'client_msg_no' => '1',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-20 18:25:34',
+      'name' => 'ทดสอบ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+  ),
+  'viewDepositRequestListScript.depReqList' => 
+  array (
+  ),
+  'viewRegisterRequestListScript.regReqList' => 
+  array (
+    0 => 
+    array (
+      'req_register_no' => '5',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 17:20:12',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กรุงเทพ',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'ป้ายโฆษณา',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    1 => 
+    array (
+      'req_register_no' => '4',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 16:35:42',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'เพื่อนแนะนำ',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    2 => 
+    array (
+      'req_register_no' => '3',
+      'is_valid' => '1',
+      'is_commit' => '1',
+      'timestamp' => '2016-07-15 16:35:14',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ จากมายแอดมิน',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'จาก google',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+  ),
+).
+INFO | 09:42:30 | @Bootstrap._loadController | > Render View index.php with Render Option: 0.
+INFO | 09:42:30 | @ControllerWithPermission._checkPermission | > [Integer] Session::get('user_no'): 1.
+INFO | 09:42:30 | @ControllerWithPermission.renderView | > [Integer] $permission: 1.
+INFO | 09:42:30 | @ControllerWithPermission.renderView | > Permission granted.
+INFO | 09:55:39 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/index/doLogout from 127.0.0.1.
+INFO | 09:55:39 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'index',
+  3 => 'doLogout',
+).
+INFO | 09:55:39 | @Bootstrap.Bootstrap | > Valid element count (4/5).
+INFO | 09:55:39 | @Bootstrap._loadController | > Load Controller index-controller.php.
+INFO | 09:55:39 | @ControllerWithPermission.Controller | > [Array] $_SESSION: array (
+  'user_no' => 1,
+  'username' => 'admin',
+  'isAdmin' => '1',
+  'viewClientMessageListScript.clientMsgList' => 
+  array (
+    0 => 
+    array (
+      'client_msg_no' => '2',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-22 22:40:35',
+      'name' => 'ทดสอบนะ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+    1 => 
+    array (
+      'client_msg_no' => '1',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-20 18:25:34',
+      'name' => 'ทดสอบ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+  ),
+  'viewRegisterRequestListScript.regReqList' => 
+  array (
+    0 => 
+    array (
+      'req_register_no' => '5',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 17:20:12',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กรุงเทพ',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'ป้ายโฆษณา',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    1 => 
+    array (
+      'req_register_no' => '4',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 16:35:42',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'เพื่อนแนะนำ',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    2 => 
+    array (
+      'req_register_no' => '3',
+      'is_valid' => '1',
+      'is_commit' => '1',
+      'timestamp' => '2016-07-15 16:35:14',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ จากมายแอดมิน',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'จาก google',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+  ),
+  'viewDepositRequestListScript.depReqList' => 
+  array (
+  ),
+).
+INFO | 09:55:39 | @Bootstrap._loadController | > Call Function index.doLogout().
+INFO | 09:55:39 | @Controller.doLogout | > Function doLogout() is called.
+INFO | 09:55:39 | @Controller.headToPage | > Head to: http://127.0.0.1/framework-php/login.
+INFO | 09:55:39 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/login from 127.0.0.1.
+INFO | 09:55:39 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'login',
+).
+INFO | 09:55:39 | @Bootstrap.Bootstrap | > Valid element count (3/5).
+INFO | 09:55:39 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 09:55:39 | @Controller.Controller | > [Array] $_SESSION: array (
+  'user_no' => -1,
+  'username' => 'guest',
+  'isAdmin' => 0,
+  'viewClientMessageListScript.clientMsgList' => 
+  array (
+    0 => 
+    array (
+      'client_msg_no' => '2',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-22 22:40:35',
+      'name' => 'ทดสอบนะ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+    1 => 
+    array (
+      'client_msg_no' => '1',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-20 18:25:34',
+      'name' => 'ทดสอบ',
+      'email' => 'test@sbo342.com',
+      'tel' => '08123456789',
+      'topic' => 'หัวข้อทดสอบ',
+      'message' => 'ใครเป็นนักสำรวจที่ดิน ขยันหาที่ดินไว้สำหรับสร้างบ้านหรือทำธุรกิจอสังหาริมทรัพย์กันอยู่บ้างครับ ผู้เขียนเองเมื่อถึงวันหยุดเสาร์ อาทิตย์
+                      ',
+    ),
+  ),
+  'viewRegisterRequestListScript.regReqList' => 
+  array (
+    0 => 
+    array (
+      'req_register_no' => '5',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 17:20:12',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กรุงเทพ',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'ป้ายโฆษณา',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    1 => 
+    array (
+      'req_register_no' => '4',
+      'is_valid' => '1',
+      'is_commit' => '0',
+      'timestamp' => '2016-07-15 16:35:42',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ ระบบ',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'เพื่อนแนะนำ',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+    2 => 
+    array (
+      'req_register_no' => '3',
+      'is_valid' => '1',
+      'is_commit' => '1',
+      'timestamp' => '2016-07-15 16:35:14',
+      'web' => 'IGKBET',
+      'nameNSurname' => 'ทดสอบ จากมายแอดมิน',
+      'email' => 'test@test.com',
+      'tel1' => '012345678',
+      'tel2' => '012345670',
+      'acc_name' => 'นาย ทดสอบ ระบบ',
+      'acc_no' => '0001234567',
+      'acc_bank' => 'กสิกรไทย',
+      'acc_branch' => 'สาขาทดสอบ',
+      'rec_channel' => 'จาก google',
+      'rec_description' => 'ทดสอบคำอธิบาย',
+    ),
+  ),
+  'viewDepositRequestListScript.depReqList' => 
+  array (
+  ),
+).
+INFO | 09:55:39 | @Bootstrap._loadController | > Render View login.php with Render Option: 3.
+INFO | 03:56:57 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/index from 127.0.0.1.
+INFO | 03:56:57 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'index',
+).
+INFO | 03:56:57 | @Bootstrap.Bootstrap | > Valid element count (3/5).
+INFO | 03:56:57 | @Bootstrap._loadController | > Load Controller index-controller.php.
+INFO | 03:56:57 | @ControllerWithPermission.Controller | > [Array] $_SESSION: array (
+).
+INFO | 03:56:57 | @Bootstrap._loadController | > Render View index.php with Render Option: 0.
+INFO | 03:56:57 | @ControllerWithPermission._checkPermission | > [Integer] Session::get('user_no'): .
+INFO | 03:56:57 | @ControllerWithPermission.renderView | > [Integer] $permission: 0.
+ERROR | 03:56:57 | @ControllerWithPermission.renderView | > Permission not granted.
+INFO | 03:56:57 | @Controller.headToPage | > Head to: http://127.0.0.1/framework-php/login.
+INFO | 03:56:57 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/login from 127.0.0.1.
+INFO | 03:56:57 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'login',
+).
+INFO | 03:56:57 | @Bootstrap.Bootstrap | > Valid element count (3/5).
+INFO | 03:56:57 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 03:56:57 | @Controller.Controller | > [Array] $_SESSION: array (
+).
+INFO | 03:56:57 | @Bootstrap._loadController | > Render View login.php with Render Option: 3.
+INFO | 03:57:32 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/login from 127.0.0.1.
+INFO | 03:57:32 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'login',
+).
+INFO | 03:57:32 | @Bootstrap.Bootstrap | > Valid element count (3/5).
+INFO | 03:57:32 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 03:57:32 | @Controller.Controller | > [Array] $_SESSION: array (
+).
+INFO | 03:57:32 | @Bootstrap._loadController | > Render View login.php with Render Option: 3.
+INFO | 03:58:01 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/index from 127.0.0.1.
+INFO | 03:58:01 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'index',
+).
+INFO | 03:58:01 | @Bootstrap.Bootstrap | > Valid element count (3/5).
+INFO | 03:58:01 | @Bootstrap._loadController | > Load Controller index-controller.php.
+INFO | 03:58:01 | @ControllerWithPermission.Controller | > [Array] $_SESSION: array (
+).
+INFO | 03:58:01 | @Bootstrap._loadController | > Render View index.php with Render Option: 0.
+INFO | 03:58:01 | @ControllerWithPermission._checkPermission | > [Integer] Session::get('user_no'): .
+INFO | 03:58:01 | @ControllerWithPermission.renderView | > [Integer] $permission: 0.
+ERROR | 03:58:01 | @ControllerWithPermission.renderView | > Permission not granted.
+INFO | 03:58:01 | @Controller.headToPage | > Head to: http://127.0.0.1/framework-php/login.
+INFO | 03:58:01 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/login from 127.0.0.1.
+INFO | 03:58:01 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+  2 => 'login',
+).
+INFO | 03:58:01 | @Bootstrap.Bootstrap | > Valid element count (3/5).
+INFO | 03:58:01 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 03:58:01 | @Controller.Controller | > [Array] $_SESSION: array (
+).
+INFO | 03:58:01 | @Bootstrap._loadController | > Render View login.php with Render Option: 3.

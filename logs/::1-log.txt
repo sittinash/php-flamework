@@ -1,0 +1,44 @@
+INFO | 10:01:35 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/ from ::1.
+INFO | 10:01:35 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+).
+INFO | 10:01:35 | @Bootstrap.Bootstrap | > Valid element count (2/5).
+INFO | 10:01:35 | @Bootstrap.Bootstrap | > [String] $url[2] is empty.
+INFO | 10:01:35 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 10:01:35 | @Controller.Controller | > [Array] $_SESSION: array (
+).
+INFO | 10:01:35 | @Bootstrap._loadController | > Render View login.php with Render Option: 3.
+INFO | 03:48:20 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/ from ::1.
+INFO | 03:48:20 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+).
+INFO | 03:48:20 | @Bootstrap.Bootstrap | > Valid element count (2/5).
+INFO | 03:48:20 | @Bootstrap.Bootstrap | > [String] $url[2] is empty.
+INFO | 03:48:20 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 03:48:20 | @Controller.Controller | > [Array] $_SESSION: array (
+).
+INFO | 03:48:20 | @Bootstrap._loadController | > Render View login.php with Render Option: 3.
+INFO | 03:53:34 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/ from ::1.
+INFO | 03:53:34 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+).
+INFO | 03:53:34 | @Bootstrap.Bootstrap | > Valid element count (2/5).
+INFO | 03:53:34 | @Bootstrap.Bootstrap | > [String] $url[2] is empty.
+INFO | 03:53:34 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 03:53:34 | @Controller.Controller | > [Array] $_SESSION: array (
+).
+INFO | 03:53:34 | @Bootstrap._loadController | > Render View login.php with Render Option: 3.
+INFO | 01:53:31 | @Bootstrap.Bootstrap | > Connection requested upon /framework-php/ from ::1.
+INFO | 01:53:31 | @Bootstrap.Bootstrap | > [Array] $url: array (
+  0 => '',
+  1 => 'framework-php',
+).
+INFO | 01:53:31 | @Bootstrap.Bootstrap | > Valid element count (2/5).
+INFO | 01:53:31 | @Bootstrap.Bootstrap | > [String] $url[2] is empty.
+INFO | 01:53:31 | @Bootstrap._loadController | > Load Controller login-controller.php.
+INFO | 01:53:31 | @Controller.Controller | > [Array] $_SESSION: array (
+).
+INFO | 01:53:31 | @Bootstrap._loadController | > Render View login.php with Render Option: 3.
